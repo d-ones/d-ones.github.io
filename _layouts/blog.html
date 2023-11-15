@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/style.css/">
+  <title>duncan jones</title>
+</head>
+
+<body>
+    <header>
+      <h1>jonesy archives<h1>
+    </header>
+        <h3>{{ page.title }}</h3>
+        <p>{{page.date | date: "%Y-%m-%d"}}
+        <main>
+          {{ content }}
+        </main>
+</body>
+  <footer>
+    <h3><a class="noshow" href="/index.html/">home</a><h3>
+  </footer>
+</html>
