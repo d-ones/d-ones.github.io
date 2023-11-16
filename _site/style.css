@@ -13,12 +13,14 @@ body {
 header {
   background-color: #baf3ff;
   color: black;
-  padding: 2em;
+  padding: 1em;
+  text-align: center;
 }
 
 footer {
   background-color: #baf3ff;
   padding: 1em;
+  margin: 1em;
 }
 
 nav {
@@ -32,7 +34,7 @@ main {
 }
 
 main div {
-  margin: 2em;
+  margin: 1em;
 }
 
 main h3 {
@@ -51,4 +53,8 @@ main li {
 a.noshow {
   color: black;
   text-decoration: none;
+}
+
+a.rss {
+  font-size: 0.65em;
 }

@@ -1,0 +1,4 @@
+plugins:
+  - jekyll-feed
+title: Jonesy Archives
+author: Duncan Jones

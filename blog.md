@@ -2,15 +2,20 @@
 title: jonesy archives
 layout: default
 ---
-  {% for post in site.posts %}
-  <article>
-    <p>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </p>
-      <p>{{ post.excerpt }}</p>
+
+<div>
+    <a href="/feed.xml" target="_blank">RSS</a>
+    <p>--</p>
+    {% for post in site.posts %}
+    <article>
+        <p>
+        <a href="{{ post.url }}">
+            {{ post.title }}
+        </a>
+        </p>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-      <p>-------</p>
+      <p>{{ post.excerpt }}</p>
+      <p>--</p>
   </article>
 {% endfor %}
+</div>

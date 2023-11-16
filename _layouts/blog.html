@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/style.css">
-  <title>duncan jones</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/style.css">
+<title>duncan jones</title>
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="/feed.xml">
 </head>
 
 <body>
@@ -12,11 +13,16 @@
       <h1>jonesy archives<h1>
     </header>
         <h3>{{ page.title }}</h3>
-        <p>{{page.date | date: "%Y-%m-%d"}}
+      <time datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time>
+      <p>--</p>
         <main>
           {{ content }}
         </main>
 </body>
+  <p>--</p>
+  <div class=rssbox>
+        <a href="/feed.xml" target="_blank">RSS</a>
+  </div>
   <footer>
     <h3><a class="noshow" href="/index">home</a><h3>
   </footer>
