@@ -58,3 +58,7 @@ a.noshow {
 a.rss {
   font-size: 0.65em;
 }
+
+div.rssbox {
+  margin: 1em;
+}
