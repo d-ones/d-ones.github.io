@@ -14,7 +14,6 @@ layout: default
         </a>
         </p>
     <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
-      <p>{{ post.excerpt }}</p>
       <p>--</p>
   </article>
 {% endfor %}
